@@ -1,0 +1,244 @@
+/* 기본 스타일 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 32px;
+  display: grid;
+  gap: 32px;
+  font-family: 'Malgun Gothic', sans-serif;
+}
+
+section {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* 1. 색상 관련 속성 */
+.color-example {
+  color: #ff0000;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.background-color-example {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.background-image-example {
+  background-image: url('https://img.freepik.com/premium-photo/trees-growing-forest_1048944-30368869.jpg?w=1380');
+  background-size: cover;
+  height: 150px;
+  padding: 10px;
+  color: white;
+}
+
+/* 2. 텍스트 관련 속성 */
+.font-size-example {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-align-example {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.font-weight-example {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.font-style-example {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.line-height-example {
+  line-height: 2;
+  margin-bottom: 10px;
+}
+
+.font-family-example {
+  font-family: 'Courier New', monospace;
+  margin-bottom: 10px;
+}
+
+.letter-spacing-example {
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+/* 3. 크기 관련 속성 */
+.width-example {
+  width: 50%;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.min-width-example {
+  min-width: 200px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.max-width-example {
+  max-width: 300px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.height-example {
+  height: 100px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.min-height-example {
+  min-height: 100px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.max-height-example {
+  max-height: 100px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+
+/* 4. 여백 관련 속성 */
+.margin-example {
+  margin: 20px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.padding-example {
+  padding: 20px;
+  background-color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.border-example {
+  border: 3px solid #ff0000;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* 5. 레이아웃 관련 속성 */
+.display-block-example {
+  display: block;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.display-flex-example {
+  display: flex;
+  gap: 10px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.display-flex-example div {
+  background-color: #fff;
+  padding: 10px;
+  flex: 1;
+}
+
+.display-grid-example {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.display-grid-example div {
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* 6. 위치 관련 속성 */
+.position-relative-example {
+  position: relative;
+  top: 10px;
+  left: 20px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.position-absolute-example {
+  position: absolute;
+  right: 20px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.position-fixed-example {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* 7. 미디어 쿼리 */
+.media-query-example {
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .media-query-example {
+    background-color: #ff0000;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 16px;
+  }
+  
+  section {
+    padding: 10px;
+  }
+}
+
+@media print {
+  .media-query-example {
+    display: none;
+  }
+}
+
+
+* {margin: 0; padding: 0;}
+body {padding: 32px; display: grid; gap: 32px;}
+
+

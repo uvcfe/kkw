@@ -1,0 +1,119 @@
+/* 1. 초기화 전 기본 스타일 */
+.before-reset {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* 2. 초기화 후 스타일 */
+.after-reset {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* 유저 에이전트 초기화 */
+.after-reset *,
+.after-reset *::before,
+.after-reset *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.after-reset ul {
+  list-style: none;
+}
+
+.after-reset button,
+.after-reset input,
+.after-reset select {
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  outline: none;
+}
+
+.after-reset button {
+  cursor: pointer;
+}
+
+/* 3. 커스텀 스타일 */
+.custom-styles {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* 유저 에이전트 초기화 */
+.custom-styles *,
+.custom-styles *::before,
+.custom-styles *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 커스텀 스타일 적용 */
+.custom-styles ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.custom-styles li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.custom-styles button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-styles button:hover {
+  background-color: #45a049;
+}
+
+.custom-styles input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.custom-styles select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 10px 0;
+  background-color: white;
+}
+
+/* 공통 스타일 */
+body {
+  font-family: 'Malgun Gothic', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+p {
+  margin-bottom: 20px;
+}

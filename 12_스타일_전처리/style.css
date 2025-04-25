@@ -1,0 +1,98 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container h1 {
+  color: blue;
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 40px;
+}
+.container section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.container section h2 {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background-color: white;
+}
+.card.featured {
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background-color: blue;
+  color: white;
+}
+
+.message, .error, .success {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.success {
+  background-color: #ccccff;
+  border-color: blue;
+}
+
+.error {
+  background-color: #ffebee;
+  border-color: #f44336;
+}
+
+.color-box {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.color-box.light {
+  background-color: #9999ff;
+}
+.color-box.dark {
+  background-color: #000099;
+  color: white;
+}
+
+.variables .box {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  color: white;
+}
+.variables .box.primary {
+  background-color: blue;
+}
+.variables .box.secondary {
+  background-color: red;
+}
+
+.nesting .menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nesting .menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.nesting .menu ul li a {
+  text-decoration: none;
+  color: red;
+}
+.nesting .menu ul li a:hover {
+  color: #990000;
+}
+
+/*# sourceMappingURL=style.css.map */

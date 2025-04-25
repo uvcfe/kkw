@@ -1,0 +1,107 @@
+* {margin: 0; padding: 0;}
+body {padding: 32px; display: grid; gap: 32px;}
+
+/* CSS 기본 작성 방법 */
+
+
+/* 태그 선택자 */
+h1 {
+  color: blue;
+  font-size: 24px;
+}
+
+p {
+  color: #333;
+  line-height: 1.5; /* 폰틑 높이 */
+  letter-spacing: 0px; /* 자간 간격*/
+}
+
+/* 클래스 선택자 */
+.text-red {
+  color: red;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* 아이디 선택자 */
+#header {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+#footer {
+  background-color: #333;
+  color: white;
+}
+
+/* 자손 선택자 */
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* CSS 네스팅 예제 */
+nav {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      
+      a {
+        color: orange;
+        text-decoration: none;
+
+        &:hover {
+          color: green;
+        }
+      }
+    }
+  }
+}
+
+/* 자식 선택자 */
+div > p {
+  font-weight: bold;
+}
+
+/* 속성 선택자 */
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+/* 가상 클래스 선택자 */
+a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+/* 가상 요소 선택자 */
+p::first-line {
+  font-weight: bold;
+}
+
+/* 그룹 선택자 */
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

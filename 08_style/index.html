@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- (1) CSS를 HTML 안에 작성 -->
+  <style>
+    .a {color: red;}
+    .b {color: brown;}
+  </style>
+  <!-- (2) 스타일을 별도의 CSS 파일로 작성해서 연결 -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <p class="a">aaa</p> <!-- (1) <style> 태그 안에 작성 -->
+  <p class="b">bbb</p> <!-- (1) <style> 태그 안에 작성 -->
+  <p class="c">ccc</p> <!-- (2) <link> 외부 파일에 작성 -->
+  <p class="d">ddd</p> <!-- (2) <link> 외부 파일에 작성 -->
+  <p class="e">eee</p> <!-- (3) <script> 태그 안에 작성 -->
+  <p class="f">fff</p> <!-- (3) <script> 태그 안에 작성 -->
+  <p class="g">ggg</p> <!-- (4) <script> 외부 파일에 작성 -->
+  <p class="h">hhh</p> <!-- (4) <script> 외부 파일에 작성 -->
+  <p style="color: violet;">iii</p> <!-- (5) 인라인 스타일 -->
+  <p style="color: blueviolet;">jjj</p> <!-- (5) 인라인 스타일 -->
+  <!-- (3) CSS를 HTML 안에 자바스크립트의 속성으로 작성 -->
+  <script>
+    document.getElementsByClassName('e')[0].style.color = 'orange';
+    document.getElementsByClassName('f')[0].style.color = 'orangered';
+  </script>
+  <!-- (4) 스타일을 별도의 자바스크립트 파일로 작성해서 연결 -->
+  <script src="script.js"></script>
+</body>
+</html>

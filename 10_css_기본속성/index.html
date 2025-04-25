@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 기본 속성 예제</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CSS 기본 속성 예제 모음</h1>
+
+  <!-- Section 1: 색상 관련 속성 -->
+  <section class="color-section">
+    <h2>1. 색상 관련 속성</h2>
+    <div class="color-example">텍스트 색상 예제 (color)</div>
+    <div class="background-color-example">배경색 예제 (background-color)</div>
+    <div class="background-image-example">배경 이미지 예제 (background-image)</div>
+  </section>
+
+  <!-- Section 2: 텍스트 관련 속성 -->
+  <section class="font-section">
+    <h2>2. 텍스트 관련 속성</h2>
+    <div class="font-size-example">글자 크기 예제 (font-size)</div>
+    <div class="text-align-example">텍스트 정렬 예제 (text-align)</div>
+    <div class="font-weight-example">글자 두께 예제 (font-weight)</div>
+    <div class="font-style-example">글자 스타일 예제 (font-style)</div>
+    <div class="line-height-example">줄 간격 예제 (line-height)</div>
+    <div class="font-family-example">글꼴 종류 예제 (font-family)</div>
+    <div class="letter-spacing-example">자간 간격 예제 (letter-spacing)</div>
+  </section>
+
+  <!-- Section 3: 크기 관련 속성 -->
+  <section class="size-section">
+    <h2>3. 크기 관련 속성</h2>
+    <div class="width-example">너비 예제 (width)</div>
+    <div class="min-width-example">최소 너비 예제 (min-width)</div>
+    <div class="max-width-example">최대 너비 예제 (max-width)</div>
+    <div class="height-example">높이 예제 (height)</div>
+    <div class="min-height-example">최소 높이 예제 (min-height)</div>
+    <div class="max-height-example">최대 높이 예제 (max-height)</div>
+  </section>
+
+  <!-- Section 4: 여백 관련 속성 -->
+  <section class="spacing-section">
+    <h2>4. 여백 관련 속성</h2>
+    <div class="margin-example">바깥 여백 예제 (margin)</div>
+    <div class="padding-example">안쪽 여백 예제 (padding)</div>
+    <div class="border-example">테두리 예제 (border)</div>
+  </section>
+
+  <!-- Section 5: 레이아웃 관련 속성 -->
+  <section class="layout-section">
+    <h2>5. 레이아웃 관련 속성</h2>
+    <div class="display-block-example">블록 요소 예제 (display: block)</div>
+    <div class="display-flex-example">
+      <div>플렉스 아이템 1</div>
+      <div>플렉스 아이템 2</div>
+      <div>플렉스 아이템 3</div>
+    </div>
+    <div class="display-grid-example">
+      <div>그리드 아이템 1</div>
+      <div>그리드 아이템 2</div>
+      <div>그리드 아이템 3</div>
+    </div>
+  </section>
+
+  <!-- Section 6: 위치 관련 속성 -->
+  <section class="position-section">
+    <h2>6. 위치 관련 속성</h2>
+    <div class="position-relative-example">상대 위치 예제 (position: relative)</div>
+    <div class="position-absolute-example">절대 위치 예제 (position: absolute)</div>
+    <div class="position-fixed-example">고정 위치 예제 (position: fixed)</div>
+  </section>
+
+  <!-- Section 7: 미디어 쿼리 예제 -->
+  <section class="media-query-section">
+    <h2>7. 미디어 쿼리 예제</h2>
+    <div class="media-query-example">브라우저 크기를 조절하면 효과를 볼 수 있습니다</div>
+  </section>
+</body>
+</html>
+
+
+<!-- 
+
+/* CSS 기본 속성 */
+
+(1) 색상 관련 속성
+
+/* 컬러 */
+color: #333;
+
+/* 배경색 */
+background-color: #f0f0f0;
+
+/* 배경 이미지 */
+background-image: url('image.jpg');
+
+
+(2) 텍스트 관련 속성
+
+/* 폰트 사이즈 */
+font-size: 16px;
+
+/* 폰트 중앙 정렬 */
+text-align: center;
+
+/* 폰트 두께 */
+font-weight: bold;
+
+/* 폰트 스타일 */
+font-style: italic;
+
+/* 폰트 줄 높이 */
+line-height: 1.5;
+
+/* 폰트 패밀리 */
+font-family: 'Arial', sans-serif;
+
+/* 자간 간격 */
+letter-spacing: 0px;
+
+
+(3) 크기 관련 속성
+
+/* 너비 */
+width: 100%;
+
+/* 최소 너비 */
+min-width: 100px;
+
+/* 최대 너비 */
+max-width: 1000px;
+
+
+/* 높이 */
+height: 100%;
+
+/* 최소 높이 */
+min-height: 100px;
+
+/* 최대 높이 */
+max-height: 1000px;
+
+
+
+(4) 여백 관련 속성
+
+
+/* 마진 */
+margin: 0;
+
+/* 패딩 */
+padding: 0;
+
+/* 테두리 */
+border: 1px solid #ccc;
+
+
+(5) 레이아웃 관련 속성
+
+/* 디스플레이 */
+display: block;
+
+/* 플렉스 */
+display: flex;
+
+/* 그리드 */
+display: grid;
+
+/* 정렬 */
+align-items: center;
+align-content: flex-start;
+align-content: flex-end;
+
+/* 정렬 */
+justify-content: center;
+justify-content: flex-start;
+justify-content: flex-end;
+
+/* 디스플레이 간격 */
+gap: 10px;
+
+
+
+
+(6) 위치 관련 속성
+
+/* 포지션 */
+position: relative;
+position: absolute;
+position: fixed;
+
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+
+
+
+
+(7) 미디어쿼리
+
+/* 미디어쿼리 */
+@media (max-width: 768px) {
+  body {
+    background-color: #f0f0f0;
+  }
+}
+
+/* 디바이스 타입 (all, screen, print)*/
+@media all and (max-width: 768px) {
+  body {
+    background-color: #f0f0f0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #f0f0f0;
+  }
+}
+
+@media print and (max-width: 768px) {
+  body {
+    background-color: #f0f0f0;
+  }
+}
+ -->

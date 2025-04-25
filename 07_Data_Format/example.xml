@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userProfile>
+    <personalInformation>
+        <name>John Doe</name>
+        <age>30</age>
+        <email>john@example.com</email>
+    </personalInformation>
+    <skills>
+        <skill>HTML</skill>
+        <skill>CSS</skill>
+        <skill>JavaScript</skill>
+    </skills>
+</userProfile> 

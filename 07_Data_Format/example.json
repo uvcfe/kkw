@@ -1,0 +1,14 @@
+{
+    "userProfile": {
+        "personalInformation": {
+            "name": "John Doe",
+            "age": 30,
+            "email": "john@example.com"
+        },
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    }
+} 

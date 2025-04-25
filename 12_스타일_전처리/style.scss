@@ -1,0 +1,140 @@
+// 1. 변수
+$primary-color: blue;
+$secondary-color: red;
+$font-stack: Helvetica, sans-serif;
+$spacing: 20px;
+
+// 2. 중첩
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing;
+
+  h1 {
+    color: $primary-color;
+    font-family: $font-stack;
+    margin-bottom: $spacing * 2;
+  }
+
+  section {
+    margin-bottom: $spacing * 2;
+    padding: $spacing;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    h2 {
+      color: $secondary-color;
+      margin-bottom: $spacing;
+    }
+  }
+}
+
+// 3. 믹스인
+@mixin card-base {
+  padding: $spacing;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: $spacing;
+}
+
+@mixin featured-card {
+  @include card-base;
+  background-color: $primary-color;
+  color: white;
+}
+
+.card {
+  @include card-base;
+  background-color: white;
+
+  &.featured {
+    @include featured-card;
+  }
+}
+
+// 4. 상속
+.message {
+  padding: $spacing;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: $spacing;
+}
+
+.success {
+  @extend .message;
+  background-color: lighten($primary-color, 40%);
+  border-color: $primary-color;
+}
+
+.error {
+  @extend .message;
+  background-color: #ffebee;
+  border-color: #f44336;
+}
+
+// 5. 함수
+@function lighten-color($color, $amount) {
+  @return lighten($color, $amount);
+}
+
+@function darken-color($color, $amount) {
+  @return darken($color, $amount);
+}
+
+.color-box {
+  padding: $spacing;
+  margin-bottom: $spacing;
+  border-radius: 4px;
+
+  &.light {
+    background-color: lighten-color($primary-color, 30%);
+  }
+
+  &.dark {
+    background-color: darken-color($primary-color, 20%);
+    color: white;
+  }
+}
+
+// 6. 변수 사용 예제
+.variables {
+  .box {
+    padding: $spacing;
+    margin-bottom: $spacing;
+    border-radius: 4px;
+    color: white;
+
+    &.primary {
+      background-color: $primary-color;
+    }
+
+    &.secondary {
+      background-color: $secondary-color;
+    }
+  }
+}
+
+// 7. 중첩 규칙 예제
+.nesting {
+  .menu {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        margin-right: $spacing;
+
+        a {
+          text-decoration: none;
+          color: $secondary-color;
+          
+          &:hover {
+            color: darken($secondary-color, 20%);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 16px;
+  max-width: 1200px;
+  margin: 16px auto;
+  justify-content: center;
+}
+main section:not(:only-child) {
+  width: calc(33.33% - 16px);
+}
+section {
+  border: 1px solid;
+  padding: 16px;
+  border-radius: 8px;
+  width: calc(100% - 32px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+button {
+  border: 1px solid #ddd;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin: 8px;
+  cursor: pointer;
+  background: #333;
+  &:hover {
+    background: #555;
+  }
+  &:active {
+    background: orange;
+  }
+}
+nav {
+  display: flex;
+  gap: 16px;
+  margin: 16px;
+  align-items: center;
+  justify-content: center;
+  & div {
+    display: flex;
+    gap: 16px;
+  }
+  & .server-component {
+    color: orange;
+  }
+  & .client-component {
+    color: green;
+  }
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+
+.page-info {
+  display: grid;
+  gap: 8px;
+  font-size: .875rem;
+  & span {
+    font-weight: bold;
+    padding: 4px;
+    border-radius: 4px;
+  }
+}
+.client-component {
+  & span {
+    color: green;
+  }
+}
+.server-component {
+  & span {
+    color: orange;
+  }
+}
+.component-container {
+  padding: 8px;
+  border: 1px solid;
+  border-radius: 8px;
+  margin: 8px 0;
+  & p {
+    &:nth-of-type(2) {
+      max-width: 300px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+.component-info {
+  opacity: .5;
+}

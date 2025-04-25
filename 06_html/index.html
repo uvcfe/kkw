@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 예제</title>
+  <link rel="stylesheet" href="style.css">
+  <scirpt src="scripts01.js"></scirpt>
+</head>
+<body>
+  <header>
+    <h1>헤더</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="a">홈</li>
+        <li><a href="#" class="b">소개</li>
+        <li><a href="#" class="c">연락처</li>
+        <li><a href="#" class="d">연락처</li>
+        <li><a href="#" class="e">연락처</li>
+        <li><a href="#" class="f">연락처</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <p>텍스트<span>굵은 텍스트</span></p>
+    <b>굵은 텍스트</b>
+  </main>
+<p>텍스트</p>
+<a href="https://www.naver.com/" target="blank">네이버</a>
+<footer>
+  <p>푸터 컨텐츠</p>
+</footer>
+<script>
+  document.getElementsByClassName('b')[1].style.color = 'green';
+  document.getElementById('c').style.color = 'blue';
+  document.querySelector('#d').style.color='yellow';
+  document.querySelector('.e').style.color='purple';
+</script>
+</body>
+</html>
